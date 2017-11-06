@@ -23,6 +23,8 @@ app.use(bodyParser.urlencoded({'extended': true}));
 app.use(bodyParser.json());
 
 
+app.use(express.static(path.join(__dirname, 'dist')));
+
 const routes = require("./api/routes/routes");
 
 app.use(routes);
