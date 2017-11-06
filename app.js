@@ -4,6 +4,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+const User = require('./api/models/userModel');
 const http = require('http');
 
 mongoose.Promise = global.Promise;
@@ -23,11 +24,11 @@ app.use(bodyParser.urlencoded({'extended': true}));
 app.use(bodyParser.json());
 
 
-app.use(express.static(path.join(__dirname, 'dist')));
+// app.use(express.static(path.join(__dirname, 'dist')));
 
 const routes = require("./api/routes/routes");
 
-app.use(routes);
+app.use('/', routes);
 
 const server = http.createServer(app);
 
