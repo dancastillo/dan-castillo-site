@@ -4,6 +4,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+const http = require('http');
 
 mongoose.Promise = global.Promise;
 
@@ -26,7 +27,6 @@ const routes = require("./api/routes/routes");
 
 app.use(routes);
 
-// module.exports = app;
-app.listen(port, () => {
-  console.log('App listening on port ' + port)
-})
+const server = http.createServer(app);
+
+server.listen(port, () => console.log(`App listening on localhost ${port}`));
