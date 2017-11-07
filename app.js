@@ -30,6 +30,11 @@ const routes = require("./api/routes/routes");
 
 app.use('/api', routes);
 
+// Send all other requests to the Angular app
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'dist/index.html'));
+});
+
 const server = http.createServer(app);
 
 server.listen(port, () => console.log(`App listening on localhost ${port}`));
