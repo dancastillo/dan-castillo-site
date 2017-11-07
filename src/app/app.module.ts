@@ -6,11 +6,21 @@ import { AppComponent } from './app.component';
 import { HttpModule } from '@angular/http';
 import { DataService } from './services/data.service';
 import { NavbarComponent } from './navbar/navbar.component';
+import { EmploymentComponent } from './employment/employment.component';
+import { SkillsComponent } from './skills/skills.component';
+import { EducationComponent } from './education/education.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    EmploymentComponent,
+    SkillsComponent,
+    EducationComponent,
+    PortfolioComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
