@@ -9,6 +9,6 @@ export class SkillsService {
   constructor(private _http: Http) { }
 
   getAllSkills() {
-    return this._http.get('assets/images-array.json').map(res => res.json());
+    return this._http.get('api/skills').map(res => res.json());
   }
 }
