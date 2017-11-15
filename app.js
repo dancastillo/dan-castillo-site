@@ -5,6 +5,7 @@ const port = process.env.PORT || 3000;
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const User = require('./api/models/userModel');
+const Skill = require('./api/models/skillModel');
 const http = require('http');
 
 mongoose.Promise = global.Promise;
