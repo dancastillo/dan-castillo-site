@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const User = require('./api/models/userModel');
 const Skill = require('./api/models/skillModel');
+const School = require('./api/models/schoolModel');
 const http = require('http');
 
 mongoose.Promise = global.Promise;
