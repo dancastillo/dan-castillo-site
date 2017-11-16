@@ -14,6 +14,7 @@ import { EducationComponent } from './education/education.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { SkillCardComponent } from './skill-card/skill-card.component';
+import { JobsService } from './services/jobs/jobs.service';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { SkillCardComponent } from './skill-card/skill-card.component';
   providers: [ 
     DataService,
     SkillsService,
-    SchoolsService
+    SchoolsService,
+    JobsService
    ],
   bootstrap: [ AppComponent ]
 })
