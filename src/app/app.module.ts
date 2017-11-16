@@ -10,11 +10,11 @@ import { SchoolsService } from './services/schools/schools.service';
 import { NavbarComponent } from './navbar/navbar.component';
 import { EmploymentComponent } from './employment/employment.component';
 import { SkillsComponent } from './skills/skills.component';
-import { EducationComponent } from './education/education.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { SkillCardComponent } from './skills/skill-card/skill-card.component';
 import { JobsService } from './services/jobs/jobs.service';
+import { SchoolComponent } from './school/school.component';
 
 @NgModule({
   declarations: [
@@ -22,10 +22,10 @@ import { JobsService } from './services/jobs/jobs.service';
     NavbarComponent,
     EmploymentComponent,
     SkillsComponent,
-    EducationComponent,
     PortfolioComponent,
     ContactComponent,
-    SkillCardComponent
+    SkillCardComponent,
+    SchoolComponent
   ],
   imports: [
     BrowserModule,
