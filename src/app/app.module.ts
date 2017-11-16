@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HttpModule } from '@angular/http';
 import { DataService } from './services/data.service';
 import { SkillsService } from './services/skills.service';
+import { SchoolsService } from './services/schools/schools.service';
 import { NavbarComponent } from './navbar/navbar.component';
 import { EmploymentComponent } from './employment/employment.component';
 import { SkillsComponent } from './skills/skills.component';
@@ -31,7 +32,8 @@ import { SkillCardComponent } from './skill-card/skill-card.component';
   ],
   providers: [ 
     DataService,
-    SkillsService
+    SkillsService,
+    SchoolsService
    ],
   bootstrap: [ AppComponent ]
 })
