@@ -15,4 +15,6 @@ routes.get('/skills', Skills.get_all_skills);
 
 routes.get('/jobs', Jobs.get_all_skills);
 
+routes.get('/schools', Schools.get_all_skills);
+
 module.exports = routes;
