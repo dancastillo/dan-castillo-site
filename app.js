@@ -9,13 +9,15 @@ const Skill = require('./api/models/skillModel');
 const School = require('./api/models/schoolModel');
 const Job = require('./api/models/jobModel');
 const http = require('http');
+const env = require('dotenv').config()
 
 mongoose.Promise = global.Promise;
 
 const options = {
   useMongoClient: true
 };
-const uri = 'mongodb://localhost:27017/dan-castillo';
+const uri = process.env.DB_URI || 'mongodb://localhost:27017/dan-castillo';
+console.log("uri", uri)
 
 // connect to mongodb
 mongoose.connect(uri, options).then(
