@@ -1,22 +1,20 @@
-<div class="container">
-  <div class="row">
-    <div *ngFor="let job of jobs" class="card col-lg-12 col-md-6 col-sm-12">
-      <h3 class="card-header text-center">{{ job.company }}</h3>
-      <div class="card-block">
-        <div class="card-title">
-          <div class="row text-center">
-              <h5 class="col-md-6 col-sm-6">{{ job.title }}</h5>
-              <h5 class="col-md-6 col-sm-6">{{ job.startDate }} - {{ job.endDate }}</h5>
-          </div>
-        </div>
-        <p class="card-text text-right"><small class="text-muted">{{ job.city }}, {{ job.state }}</small></p>
-        <div *ngIf="job.description">
-          <ul *ngFor='let description of job.description'>
-            <li class="card-text">{{ description }}</li>
-          </ul>
+<div class="row">
+  <div *ngFor="let job of jobs" class="card col-lg-12 col-md-6 col-sm-12">
+    <h3 class="card-header text-center">{{ job.company }}</h3>
+    <div class="card-block">
+      <div class="card-title">
+        <div class="row text-center">
+            <h5 class="col-md-6 col-sm-6">{{ job.title }}</h5>
+            <h5 class="col-md-6 col-sm-6">{{ job.startDate }} - {{ job.endDate }}</h5>
         </div>
       </div>
+      <p class="card-text text-right"><small class="text-muted">{{ job.city }}, {{ job.state }}</small></p>
+      <div *ngIf="job.description">
+        <ul *ngFor='let description of job.description'>
+          <li class="card-text">{{ description }}</li>
+        </ul>
+      </div>
     </div>
-    <div class="alert alert-danger" *ngIf="error">{{ error }}</div>
   </div>
+  <div class="alert alert-danger" *ngIf="error">{{ error }}</div>
 </div>
