@@ -1,16 +1,33 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <app-navbar></app-navbar>
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
+<div class="container">
+  <div *ngFor="let user of users" class="text-center">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>
+          {{ user.name }}
+        </h1>
+      </div>
+      <div class="col-sm-12">
+        <h4>
+          {{ user.position }}
+        </h4>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <p>{{ user.email }}</p>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <p><a href="{{ user.linkedin }}">LinkedIn</a></p>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+          <p><a href="{{ user.github }}">GitHub</a></p>
+      </div>
+    </div>
+  </div>
 </div>
-<div>
-  Loading Users....
-</div>
-<ul>
-  <li *ngFor="let user of users">{{ user.name }}</li>
-</ul>
 <app-school></app-school>
 <app-job></app-job>
 <app-portfolio></app-portfolio>

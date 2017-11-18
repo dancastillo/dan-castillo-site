@@ -8,9 +8,8 @@ import { DataService } from './services/data.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
 
-  users: Array<any>;
+  users: Array<string>;
 
   // Create an instance of the DataService through dependency injection
   constructor(private _dataService: DataService) {
