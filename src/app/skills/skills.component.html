@@ -1,5 +1,5 @@
-<div class="row">
-  <div *ngFor="let skill of skills" class="col-lg-3 col-md-4 col-sm-6 text-center">
+<div class="row pt-4">
+  <div *ngFor="let skill of skills" class="col-lg-3 col-md-4 col-sm-6 text-center mb-2">
     <app-skill-card [skill]="skill"></app-skill-card>
   </div>
   <div class="alert alert-danger" *ngIf="error">{{ error }}</div>

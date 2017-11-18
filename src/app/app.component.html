@@ -1,7 +1,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <app-navbar></app-navbar>
 <div class="container">
-  <div *ngFor="let user of users" class="text-center">
+  <div *ngFor="let user of users" class="text-center pt-4">
     <div class="row">
       <div class="col-sm-12">
         <h1>
@@ -32,4 +32,4 @@
   <app-portfolio></app-portfolio>
   <app-skills></app-skills>
 </div>
-<app-contact></app-contact>
+<app-contact [users]="users"></app-contact>
