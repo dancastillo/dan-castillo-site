@@ -16,8 +16,7 @@ mongoose.Promise = global.Promise;
 const options = {
   useMongoClient: true
 };
-const uri = process.env.DB_URI || 'mongodb://localhost:27017/dan-castillo';
-console.log("uri", uri)
+const uri = process.env.DB_URI;
 
 // connect to mongodb
 mongoose.connect(uri, options).then(
