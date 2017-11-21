@@ -9,6 +9,7 @@ const Skill = require('./api/models/skillModel');
 const School = require('./api/models/schoolModel');
 const Job = require('./api/models/jobModel');
 const http = require('http');
+const env = require('dotenv').config();
 
 mongoose.Promise = global.Promise;
 
