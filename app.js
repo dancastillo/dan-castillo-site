@@ -8,6 +8,7 @@ const User = require('./api/models/userModel');
 const Skill = require('./api/models/skillModel');
 const School = require('./api/models/schoolModel');
 const Job = require('./api/models/jobModel');
+const Project = require('./api/models/projectModel');
 const http = require('http');
 const env = require('dotenv').config();
 
