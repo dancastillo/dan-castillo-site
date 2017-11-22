@@ -15,6 +15,7 @@ import { SkillCardComponent } from './skills/skill-card/skill-card.component';
 import { JobsService } from './services/jobs/jobs.service';
 import { SchoolComponent } from './school/school.component';
 import { JobComponent } from './job/job.component';
+import { ProjectComponent } from './project/project.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { JobComponent } from './job/job.component';
     ContactComponent,
     SkillCardComponent,
     SchoolComponent,
-    JobComponent
+    JobComponent,
+    ProjectComponent
   ],
   imports: [
     BrowserModule,
