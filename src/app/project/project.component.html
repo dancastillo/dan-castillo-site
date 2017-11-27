@@ -1,3 +1,36 @@
-<p>
-  project works!
-</p>
+<div class="row text-center">
+  <div class="col-sm-12">
+    <h3>Projects</h3>
+  </div>
+</div>
+<div class="row">
+  <div *ngFor="let project of projects" class="card col-lg-12 col-md-6 col-sm-12 mb-2">
+    <h4 class="card-header text-center">{{ project.name }}</h4>
+    <div class="card-block">
+      <div class="card-title">
+        <div class="div" *ngIf="project.liveLink; else noLiveProject">
+          <div class="offset-9 col-sm-3">
+            <a href="{{ project.liveLink }}">GitHub</a>
+              / 
+            <a href="{{ project.github }}">Link</a>
+          </div>
+        </div>
+
+        <ng-template #noLiveProject>
+          <div class="row">
+            <a href="{{ project.github }}" class="col-md-3 col-sm-12">GitHub</a>
+          </div>
+        </ng-template>
+
+        <div>
+            <p class="card-text">{{ project.description }}</p>
+            <ul *ngFor="let tech of project.technologies">
+                <li class="card-text">{{ tech }}</li>
+            </ul>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="alert alert-danger" *ngIf="error">{{ error }}</div>
+</div>
