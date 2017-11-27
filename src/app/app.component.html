@@ -16,14 +16,20 @@
     </div>
     
     <div class="row">
-      <div class="col-lg-4 col-md-4 col-sm-12">
-        <p>{{ user.email }}</p>
+      <div class="offset-lg-3 col-lg-2 offset-md-3 col-md-2 col-sm-12">
+        <a href="mailto:{{ user.email }}">
+          <img src="{{ email }}" alt="">
+        </a>
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-12">
-        <p><a href="{{ user.linkedin }}">LinkedIn</a></p>
+      <div class="col-lg-2 col-md-2 col-sm-12">
+        <a href="{{ user.github }}">
+          <img src="{{ github }}" alt="">
+        </a>
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-12">
-          <p><a href="{{ user.github }}">GitHub</a></p>
+      <div class="col-lg-2 col-md-2 col-sm-12">
+        <a href="{{ user.linkedin }}">
+          <img src="{{ linkedin }}" alt="">
+        </a>
       </div>
     </div>
   </div>
