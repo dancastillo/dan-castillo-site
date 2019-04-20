@@ -1,49 +1,20 @@
-import { NgModule } from '@angular/core';
-import { AppComponent } from './app.component';
-
-// imports
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpModule } from '@angular/http';
+import { NgModule } from '@angular/core';
 
-// services
-import { DataService } from './services/data.service';
-import { SkillsService } from './services/skills/skills.service';
-import { SchoolsService } from './services/schools/schools.service';
-import { JobsService } from './services/jobs/jobs.service';
-import { ProjectsService } from './services/projects/projects.service';
+import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
 
-// components
-import { NavbarComponent } from './navbar/navbar.component';
-import { SkillsComponent } from './skills/skills.component';
-import { SkillCardComponent } from './skills/skill-card/skill-card.component';
-import { ContactComponent } from './contact/contact.component';
-import { SchoolComponent } from './school/school.component';
-import { JobComponent } from './job/job.component';
-import { ProjectComponent } from './project/project.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-    SkillsComponent,
-    ContactComponent,
-    SkillCardComponent,
-    SchoolComponent,
-    JobComponent,
-    ProjectComponent
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    AppRoutingModule
   ],
-  providers: [ 
-    DataService,
-    SkillsService,
-    SchoolsService,
-    JobsService,
-    ProjectsService
-   ],
+  providers: [ ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
