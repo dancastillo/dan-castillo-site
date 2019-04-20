@@ -6,3 +6,7 @@
 export const environment = {
   production: false
 };
+
+// email: string = 'http://res.cloudinary.com/dancastillo/image/upload/v1511814580/email_ado8sw.png';
+//   linkedin: string ='http://res.cloudinary.com/dancastillo/image/upload/v1511814584/linkedin_zmog3d.png';
+//   github: string ='http://res.cloudinary.com/dancastillo/image/upload/v1511814583/github_ogfwrd.png';
