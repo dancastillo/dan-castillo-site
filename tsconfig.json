@@ -2,7 +2,6 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
-    "downlevelIteration": true,
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
@@ -19,12 +18,5 @@
       "es2018",
       "dom"
     ]
-  },
-  "paths" : {
-    "@core/*": ["src/app/core/*"],
-    "@components/*": ["src/app/components/*"],
-    "@models/*": ["src/app/models/*"],
-    "@helpers/*": ["src/app/helpers/*"],
-    "@services/*": ["src/app/services/*"],
   }
 }
